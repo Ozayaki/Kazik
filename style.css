@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background: #1c1c1c;
+    color: white;
+    text-align: center;
+}
+.header {
+    background-image: url('header.png');
+    background-size: cover;
+    padding: 40px;
+}
+nav, #sendgroup {
+    display: inline-flex;
+}
+nav img {
+    width: 30px;
+    height: 30px;
+}
+#free, #send, #sdelatstavku, #stavka, #colorsel, #code, #play{
+    padding: 15px;
+    border: 0;
+    border-radius: 30px;
+    background: #ff4069;
+    box-shadow: 0 5px 5px #91243c;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-top: 5px;
+    outline: none;
+}
+#t1c2, #c1t2{
+    padding: 15px;
+    border: 0;
+    border-radius: 30px;
+    background: #ff4069;
+    box-shadow: 0 5px 5px #91243c;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-top: 5px;
+    outline: none;
+}
+#code {
+    width: 60%;
+    border-radius: 30px 0 0 30px;
+    font-size: 20px;
+}
+#send {
+    border-radius: 0 30px 30px 0;
+    
+}
+#box nav img {
+    width: 25px;
+    height: 25px;
+}
+header {
+    padding: 5px;
+    background: linear-gradient(45deg, #242424, #505050);
+    text-align: left;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+}
+#box {
+    background: #2e2e2e;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 5px;
+}
+#stavka, #colorsel {
+    font-size: 20px;
+}
+#red {
+    color: #ff5574;
+}
+#blue {
+    color: #40a1ff;
+}
+#indicator {
+    width: 30vw;
+    height: 30vw;
+    background: #6c6c6c;
+    border-radius: 100%;
+    background-size: 5000%;
+}
+@keyframes anim {
+    from {
+    background-size: 5000%;
+        background-position: 1%;
+    }
+    to {
+    background-size: 5000%;
+        background-position: 100%;
+    }
+}

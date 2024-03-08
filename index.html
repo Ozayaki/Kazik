@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Казик</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies:wght@300;400;700&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <h1>КАЗИК "ДРЯХЛОСТЬ"</h1>
+    </div>
+    <!-- header -->
+    <header>
+        <nav>
+            <h2 id="coins">0</h2>
+            <img src="icons/Coin.png">
+            <h2 id="coins2">0</h2>
+            <img src="icons/MetalCoins.png"></img>
+            <h2 id="tickets">0</h2>
+            <img src="icons/Coins.png"></img>
+        </nav>
+    </header>
+    <!-- balance -->
+    <div class="balance" id="box">
+        <h2>Пополнение баланса:</h2>
+        <button id="free">
+            <nav>
+                <h2>10</h2>
+                <img src="icons/Coin.png"></img>
+                <h2>-бесплатно</h2>
+            </nav>
+        </button>
+        <div id="sendgroup">        
+            <input type="text" id="code" value="введите код">
+            <button id="send">
+                <h2>Отправить</h2>
+            </button>
+            </div>
+        </div>
+        <!-- trade -->
+        <div class="trade" id="box">
+            <h2>Обменник:</h2>
+            <h3>Здесь вы можете обменять монеты на билеты!</h3>
+            <button id="t1c2">
+                <nav>
+                    <h2>1</h2>
+                    <img src="icons/Coins.png"></img>
+                    <h2>за 2</h2>
+                    <img src="icons/Coin.png"></img>
+                </nav>
+            </button>
+            <button id="c1t2">
+                <nav>
+                    <h2>2</h2>
+                    <img src="icons/Coin.png"></img>
+                    <h2>за 1</h2>
+                    <img src="icons/Coins.png"></img>
+                </nav>
+            </button>
+        </div>
+        <!-- stavki -->
+        <div class="stavki" id="box">
+            <h2>Ставки:</h2>
+            <h3>Введите ниже цвет на который хотите поставить (<span id="red">red</span> или <span id="blue">blue</span>) и ставку, а затем нажмите "сделать ставку"!</h3>
+            <div class="align">
+                <button id="colorsel">
+                    <h2 id="team">red</h2>
+                </button>
+                <input type="number" id="stavka" value="0">
+                <button id="sdelatstavku">
+                    <h2 id="st2">Сделать ставку</h2>
+                </button>
+            </div>
+        </div>
+        <!-- начать игру -->
+        <div class="play" id="box">
+            <h2>Играть:</h2>
+            <h3>Если вы выиграете, то получите ставку в двойном размере, если нет, то ставка пропадет!</h3>
+            <canvas id="indicator"></canvas>
+            <button id="play"><h2 id="h2play">ИГРАТЬ</h2></button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
